@@ -1,0 +1,19 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Tabs from '../components/Tabs.astro';
+import MovieGrid from '../components/MovieGrid.astro';
+---
+
+<Layout title="CineScope - Discover Movies">
+  <div class="container">
+    <Header />
+    <Tabs />
+    <MovieGrid />
+    <footer class="app-footer">
+      Built with Astro + TMDB API · Data provided by The Movie Database
+    </footer>
+  </div>
+
+  <script src="../scripts/app.js"></script>
+</Layout>
